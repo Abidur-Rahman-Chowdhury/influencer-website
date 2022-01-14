@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------
+    header style start
+----------------------- */
+.header-section{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.nagivation-section {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.navigation__title h1{
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+.navigation__title-mod{
+    color: red;
+}
+.navigation-item {
+    display: flex;
+    
+}
+.navigation-item li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* -------------------
+    header style ends
+----------------------- */
