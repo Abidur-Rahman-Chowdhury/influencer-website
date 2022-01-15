@@ -15,7 +15,7 @@ body{
 /* -------------------
     header style start
 ----------------------- */
-.header-section{
+.header-section, .influencer-section{
     width: 90%;
     margin: 0 auto;
 
@@ -36,15 +36,70 @@ body{
 }
 .navigation-item {
     display: flex;
+    margin-right: 170px;
     
 }
 .navigation-item li {
     list-style: none;
-    margin-right: 20px;
+    margin-right: 25px;
     font-size: 18px;
     font-weight: 500;
 }
 
 /* -------------------
     header style ends
+----------------------- */
+
+/* -------------------
+   influencer style start  
+----------------------- */
+.influencer-section {
+    margin-top: 50px;
+}
+.influencer__section__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* grid-column-gap: 600px; */
+ 
+   
+}
+.influencer__left h1 {
+    font-size: 52px;
+    width: 582px;
+    margin-bottom: 15px;
+
+}
+.influencer__left p{
+    width: 510px;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+.influencer__left button{
+    background-color: rgba(248, 19, 57, 0.815);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 100px;
+    border: none;
+ 
+}
+.fa-arrow-right{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.influencer__right {
+    width: 475px;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.influencer__right img{
+    width: 80%;
+}
+
+/* -------------------
+   influencer style ends  
 ----------------------- */
