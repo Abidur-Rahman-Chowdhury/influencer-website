@@ -36,7 +36,7 @@ body{
 }
 .navigation-item {
     display: flex;
-    margin-right: 170px;
+    margin-right: 120px;
     
 }
 .navigation-item li {
@@ -131,4 +131,64 @@ body{
 
 /* -------------------
    logo show ends
+----------------------- */
+
+/* -------------------
+   popular section start
+----------------------- */
+.popular-section {
+    width: 80%;
+    margin: 100px auto;
+    
+}
+.popular-section >h2{
+ text-align: center;
+ font-size: 28px;
+}
+.popular-collection-container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 25px;
+
+}
+.popular-card{
+    width: 330px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+  
+}
+.product-img {
+    width: 300px;
+
+}
+.product-img img{
+    width: 100%;
+}
+.card-details h2{
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    
+}
+.card-details h3{
+    font-size: 20px;
+    font-weight: 400; 
+    margin-bottom: 6px;
+}
+.ratings{
+    margin-bottom: 5px           ;
+}
+.card-details .ratings i{
+    color: orange;
+
+}
+.card-details .ratings .text {
+    margin-left: 5px;
+}
+.card-details p{
+    color: gray;
+}
+/* -------------------
+   popular section ends
 ----------------------- */
