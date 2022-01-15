@@ -153,10 +153,10 @@ body {
 }
 .product-img {
   max-width: 300px;
-  text-align: center;
+  
 }
 .product-img img {
-  width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .card-details h2 {
