@@ -104,7 +104,8 @@ body{
 
 }
 .influencer__right img{
-    width: 80%;
+    width:80%;
+    margin: 0 auto;
 }
 
 /* -------------------
@@ -136,7 +137,7 @@ body{
 /* -------------------
    popular section start
 ----------------------- */
-.popular-section, .contact-section {
+.popular-section {
     width: 80%;
     margin: 100px auto;
     display: flex;
@@ -157,17 +158,19 @@ body{
 
 }
 .popular-card{
-    width: 330px;
+    max-width: 330px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
   
 }
 .product-img {
-    width: 300px;
+    max-width: 300px;
+    text-align: center;
 
 }
 .product-img img{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 .card-details h2{
     font-size: 24px;
@@ -196,7 +199,7 @@ body{
 .show-see-more{
     width: 80%;
     margin: 0 auto;
-  position: relative;
+   position: relative;
    
 }
 .see-more{
@@ -220,72 +223,75 @@ body{
 /* -------------------
    contact us section
 ----------------------- */
-
-
-.contact-section-title h2{
+.contact-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.contact-section h2{
     text-align: center;
     font-size: 28px;
+    margin-bottom: 30px;
 }
-
-.contact-section{
-   display: grid;
-   grid-template-columns: 3fr 1fr; 
-   grid-column-gap: 200px ;
-
+.contact__section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
-.contact-form {
-    width: 600px;
+.contact__section .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    max-width: 500px;
     background-color: indigo;
-    border-radius: 20px;
-    padding: 30px 0;
-    margin-right: 30px;
-}
-.contact-form  input {
-    width: 60%;
-   height: 40px;
-   border-radius: 10px;
-   padding: 15px;
-   outline: none;
-   border: none;
-   margin-bottom: 25px;
-   font-size: 18px;
+    border-radius: 10px;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    margin-right: 40px;
 
 }
-.contact-form  textarea {
+.contact-form input{
     width: 60%;
-    border-radius: 15px;
-    padding: 15px;
-    font-size: 18px;
-}
-.contact-form  button {
-    padding: 10px 45px;
-    margin-top: 20px;
-    background-color: rgba(248, 19, 57, 0.815);
-    color: #fff;
-    font-weight: bold;
-    font-size: inherit;
+    height: 30px;
     border-radius: 10px;
+    padding: 15px;
+    font-size: inherit;
     outline: none;
     border: none;
+    margin-bottom: 20px;
 }
-.contact-with-us {
-    width: 400px;
+.contact-form textarea{
+    resize: none;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 25px;
+
+}
+.contact-form button{
+
+    padding: 10px 40px;
+    border-radius:10px;
+    background-color:rgba(248, 19, 57, 0.815);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
 }
 .contact-with-us h3{
-    font-size: 22px;
-    margin-top: 80px;
-    color: rgb(138, 26, 218);
+    color: rgba(138, 45, 204, 0.877);
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    
 }
 .contact-with-us p{
-    font-size: 16px;
-    margin-top: 25px;
     margin-bottom: 20px;
-   
-
+}
+.contact-with-us address{
+    color: gray;
 }
 /* -------------------
    contact us section end
@@ -316,4 +322,68 @@ footer .social-icon i{
 /* -------------------
    footer end
 ----------------------- */
+
+
+/* -------------------
+   responsive start
+----------------------- */
+/* -------------------
+   responsive for tablet
+----------------------- */
+@media (max-width:768px) {
+    
+    /* header section */
+    .navigation-item  {
+        display: none;
+    }
+    .influencer__section__container {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer__left {
+        order: 2;
+        margin-top: 40px;
+    }
+    .influencer__left h1{
+        font-size: 30px;
+       
+    }
+    .influencer__right{
+        width: 400px;
+        
+    }
+
+    /* logo show */
+    .logo-container{
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 20px;
+    }
+    
+    /* popular collection */
+    .popular-collection-container {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 30px;
+    }
+
+    /* contact section */
+
+    .contact__section {
+        grid-template-columns: repeat(1,1fr);
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .contact-form, .contact-with-us {
+        margin-left: 40px;
+    }
+    .contact-with-us{
+        margin-bottom: 30px;
+    }
+}
+
+/* tablet end */
+
+
 
