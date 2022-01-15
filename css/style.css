@@ -8,42 +8,41 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* -------------------
     header style start
 ----------------------- */
-.header-section, .influencer-section{
-    width: 90%;
-    margin: 0 auto;
-
+.header-section,
+.influencer-section {
+  width: 90%;
+  margin: 0 auto;
 }
 .nagivation-section {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
 }
-.navigation__title h1{
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 4px;
+.navigation__title h1 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
-.navigation__title-mod{
-    color: red;
+.navigation__title-mod {
+  color: red;
 }
 .navigation-item {
-    display: flex;
-    margin-right: 120px;
-    
+  display: flex;
+  margin-right: 120px;
 }
 .navigation-item li {
-    list-style: none;
-    margin-right: 25px;
-    font-size: 18px;
-    font-weight: 500;
+  list-style: none;
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* -------------------
@@ -54,58 +53,51 @@ body{
    influencer style start  
 ----------------------- */
 .influencer-section {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 .influencer__section__container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* grid-column-gap: 600px; */
- 
-   
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* grid-column-gap: 600px; */
 }
 .influencer__left h1 {
-    font-size: 52px;
-    width: 582px;
-    margin-bottom: 15px;
-
+  font-size: 52px;
+  max-width: 582px;
+  margin-bottom: 15px;
 }
-.influencer__left p{
-    width: 510px;
-    font-size: 16px;
-    margin-bottom: 20px;
-
+.influencer__left p {
+  max-width: 510px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-.influencer__left button{
-    background-color: rgba(248, 19, 57, 0.815);
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 15px 35px;
-    border-radius: 100px;
-    border: none;
- 
+.influencer__left button {
+  background-color: rgba(248, 19, 57, 0.815);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 35px;
+  border-radius: 100px;
+  border: none;
 }
 
 .influencer__left button:hover .fa-arrow-right {
-    animation: moveRight 1s ease-in-out;
-    animation-fill-mode: forwards;
+  animation: moveRight 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 @keyframes moveRight {
-    100% {
-        transform: translateX(20px) rotate(360deg);
-    }
-    
+  100% {
+    transform: translateX(20px) rotate(360deg);
+  }
 }
 .influencer__right {
-    width: 475px;
-    background-image: url('../images/Circle\ design.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-
+  width: 475px;
+  background-image: url('../images/Circle\ design.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.influencer__right img{
-    width:80%;
-    margin: 0 auto;
+.influencer__right img {
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* -------------------
@@ -117,17 +109,17 @@ body{
  -------------------*/
 
 .logo-show-off {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
-.logo-show-off hr{
-    border: 1px solid rgba(128, 128, 128, 0.082);
+.logo-show-off hr {
+  border: 1px solid rgba(128, 128, 128, 0.082);
 }
-.logo-container{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    margin: 30px 30px;
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 30px 30px;
 }
 
 /* -------------------
@@ -138,83 +130,73 @@ body{
    popular section start
 ----------------------- */
 .popular-section {
-    width: 80%;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
 }
-.popular-section >h2{
- text-align: center;
- font-size: 28px;
+.popular-section > h2 {
+  text-align: center;
+  font-size: 28px;
 }
 .popular-collection-container {
-    width: 100%;
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 25px;
-   
-
+  width: 100%;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 25px;
 }
-.popular-card{
-    max-width: 330px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-  
+.popular-card {
+  max-width: 330px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
 }
 .product-img {
-    max-width: 300px;
-    text-align: center;
-
+  max-width: 300px;
+  text-align: center;
 }
-.product-img img{
-    width: 80%;
-    margin: 0 auto;
+.product-img img {
+  width: 80%;
+  margin: 0 auto;
 }
-.card-details h2{
-    font-size: 24px;
-    margin-top: 16px;
-    margin-bottom: 6px;
-    
+.card-details h2 {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 6px;
 }
-.card-details h3{
-    font-size: 20px;
-    font-weight: 400; 
-    margin-bottom: 6px;
+.card-details h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 6px;
 }
-.ratings{
-    margin-bottom: 5px           ;
+.ratings {
+  margin-bottom: 5px;
 }
-.card-details .ratings i{
-    color: orange;
-
+.card-details .ratings i {
+  color: orange;
 }
 .card-details .ratings .text {
-    margin-left: 5px;
+  margin-left: 5px;
 }
-.card-details p{
-    color: gray;
+.card-details p {
+  color: gray;
 }
-.show-see-more{
-    width: 80%;
-    margin: 0 auto;
-   position: relative;
-   
+.show-see-more {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
-.see-more{
-    color: rgba(248, 19, 57, 0.815);
-    margin-top: 50px; 
-    position: absolute;
-    right: 0;
-    /* align-self: flex-end;
+.see-more {
+  color: rgba(248, 19, 57, 0.815);
+  margin-top: 50px;
+  position: absolute;
+  right: 0;
+  /* align-self: flex-end;
     margin-right: 180px;
     margin-top: 40px; */
-    
-    
 }
-.see-more i{
-    margin-left: 5px;
+.see-more i {
+  margin-left: 5px;
 }
 /* -------------------
    popular section ends
@@ -223,75 +205,69 @@ body{
 /* -------------------
    contact us section
 ----------------------- */
-.contact-section{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 200px;
+.contact-section {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
 }
-.contact-section h2{
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
+.contact-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 .contact__section {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .contact__section .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    background-color: indigo;
-    border-radius: 10px;
-    padding: 40px 0;
-    margin-bottom: 30px;
-    margin-right: 40px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  background-color: indigo;
+  border-radius: 10px;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  margin-right: 40px;
 }
-.contact-form input{
-    width: 60%;
-    height: 30px;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: inherit;
-    outline: none;
-    border: none;
-    margin-bottom: 20px;
+.contact-form input {
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
 }
-.contact-form textarea{
-    resize: none;
-    width: 60%;
-    border-radius: 10px;
-    font-size: 16px;
-    padding: 15px;
-    margin-bottom: 25px;
-
+.contact-form textarea {
+  resize: none;
+  width: 60%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 25px;
 }
-.contact-form button{
-
-    padding: 10px 40px;
-    border-radius:10px;
-    background-color:rgba(248, 19, 57, 0.815);
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-
+.contact-form button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: rgba(248, 19, 57, 0.815);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
-.contact-with-us h3{
-    color: rgba(138, 45, 204, 0.877);
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-
-    
+.contact-with-us h3 {
+  color: rgba(138, 45, 204, 0.877);
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
-.contact-with-us p{
-    margin-bottom: 20px;
+.contact-with-us p {
+  margin-bottom: 20px;
 }
-.contact-with-us address{
-    color: gray;
+.contact-with-us address {
+  color: gray;
 }
 /* -------------------
    contact us section end
@@ -299,30 +275,29 @@ body{
 /* -------------------
    footer start
 ----------------------- */
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 30px 0;
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 30px 0;
 }
-footer h4{
-    color: rgba(248, 19, 57, 0.815);
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 20px;
+footer h4 {
+  color: rgba(248, 19, 57, 0.815);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
 }
-footer p{
-    font-size: 14px;
+footer p {
+  font-size: 14px;
 }
-footer .social-icon i{
-    font-size: 20px;
-    margin-right: 15px;
-    margin-top: 20px;
+footer .social-icon i {
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: 20px;
 }
 /* -------------------
    footer end
 ----------------------- */
-
 
 /* -------------------
    responsive start
@@ -330,60 +305,101 @@ footer .social-icon i{
 /* -------------------
    responsive for tablet
 ----------------------- */
-@media (max-width:768px) {
-    
-    /* header section */
-    .navigation-item  {
-        display: none;
-    }
-    .influencer__section__container {
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .influencer__left {
-        order: 2;
-        margin-top: 40px;
-    }
-    .influencer__left h1{
-        font-size: 30px;
-       
-    }
-    .influencer__right{
-        width: 400px;
-        
-    }
+/* desktop/ laptop */
 
-    /* logo show */
-    .logo-container{
-        grid-template-columns: repeat(4,1fr);
-        grid-row-gap: 20px;
-    }
-    
-    /* popular collection */
-    .popular-collection-container {
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 30px;
-    }
+@media (max-width: 988px) {
+  .navigation-item {
+    display: none;
+  }
+  .influencer__left h1 {
+    font-size: 40px;
+  }
+  .influencer__right {
+    width: 350px;
+    margin-left: 30px;
+  }
+}
 
-    /* contact section */
+@media (max-width: 768px) {
+  /* header section */
 
-    .contact__section {
-        grid-template-columns: repeat(1,1fr);
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
-    }
-    .contact-form, .contact-with-us {
-        margin-left: 40px;
-    }
-    .contact-with-us{
-        margin-bottom: 30px;
-    }
+  .influencer__section__container {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .influencer__left {
+    order: 2;
+    margin-top: 40px;
+  }
+  .influencer__left h1 {
+    font-size: 30px;
+  }
+  .influencer__right {
+    width: 400px;
+  }
+
+  /* logo show */
+  .logo-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  /* popular collection */
+  .popular-collection-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  /* contact section */
+
+  .contact__section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-form,
+  .contact-with-us {
+    margin-left: 40px;
+  }
+  .contact-with-us {
+    margin-bottom: 30px;
+  }
 }
 
 /* tablet end */
 
+/* responsive for mobile device */
 
+@media (max-width: 577px) {
+  /* header */
 
+  .influencer-section {
+    width: 100%;
+  }
+  .influencer-section .influencer__left {
+    width: 80%;
+  }
+
+  .influencer__right {
+    width: 330px;
+  }
+  .influencer__left h1 {
+    font-size: 25px;
+  }
+  .influencer__left button {
+    padding: 10px 28px;
+  }
+  /* logo */
+  .logo-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  /* popular collection */
+  .popular-collection-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .popular-collection-container .popular-card {
+    margin: 0 auto;
+  }
+}
