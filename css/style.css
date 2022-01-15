@@ -136,9 +136,11 @@ body{
 /* -------------------
    popular section start
 ----------------------- */
-.popular-section {
+.popular-section, .contact-section {
     width: 80%;
     margin: 100px auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .popular-section >h2{
@@ -146,10 +148,12 @@ body{
  font-size: 28px;
 }
 .popular-collection-container {
+    width: 100%;
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 25px;
+   
 
 }
 .popular-card{
@@ -189,6 +193,100 @@ body{
 .card-details p{
     color: gray;
 }
+.show-see-more{
+    width: 80%;
+    margin: 0 auto;
+  position: relative;
+   
+}
+.see-more{
+    color: rgba(248, 19, 57, 0.815);
+    margin-top: 50px; 
+    position: absolute;
+    right: 0;
+    /* align-self: flex-end;
+    margin-right: 180px;
+    margin-top: 40px; */
+    
+    
+}
+.see-more i{
+    margin-left: 5px;
+}
 /* -------------------
    popular section ends
+----------------------- */
+
+/* -------------------
+   contact us section
+----------------------- */
+
+
+.contact-section-title h2{
+    text-align: center;
+    font-size: 28px;
+}
+
+.contact-section{
+   display: grid;
+   grid-template-columns: 3fr 1fr; 
+   grid-column-gap: 200px ;
+
+}
+.contact-form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: indigo;
+    border-radius: 20px;
+    padding: 30px 0;
+    margin-right: 30px;
+}
+.contact-form  input {
+    width: 60%;
+   height: 40px;
+   border-radius: 10px;
+   padding: 15px;
+   outline: none;
+   border: none;
+   margin-bottom: 25px;
+   font-size: 18px;
+
+}
+.contact-form  textarea {
+    width: 60%;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+}
+.contact-form  button {
+    padding: 10px 45px;
+    margin-top: 20px;
+    background-color: rgba(248, 19, 57, 0.815);
+    color: #fff;
+    font-weight: bold;
+    font-size: inherit;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.contact-with-us {
+    width: 400px;
+}
+.contact-with-us h3{
+    font-size: 22px;
+    margin-top: 80px;
+    color: rgb(138, 26, 218);
+}
+.contact-with-us p{
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+   
+
+}
+/* -------------------
+   contact us section end
 ----------------------- */
