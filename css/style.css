@@ -48,12 +48,16 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-
 .fa-bars {
   visibility: hidden;
+  position: absolute;
+  right: 20px;
+  font-size: 35px;
+  margin-top: -22px;
 }
+
 #check-box {
-  display: none;
+  visibility: hidden;
 }
 
 /* -------------------
@@ -322,12 +326,7 @@ footer .social-icon i {
 @media (max-width: 988px) {
   .fa-bars {
     visibility: visible;
-    position: absolute;
-    right: 20px;
-    font-size: 35px;
-    margin-top: -22px;
   }
-
   .navigation-item {
     flex-direction: column;
     align-items: center;
