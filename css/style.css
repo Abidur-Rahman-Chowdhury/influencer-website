@@ -404,3 +404,9 @@ footer .social-icon i {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 460px){
+    .logo-container{
+      grid-template-columns: repeat(2,1fr);
+    }
+}
