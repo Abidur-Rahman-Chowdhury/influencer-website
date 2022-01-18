@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  
 }
 
 /* -------------------
@@ -20,11 +21,14 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+
 .nagivation-section {
   display: flex;
   justify-content: space-between;
   height: 80px;
   align-items: center;
+  position: relative;
+  
 }
 .navigation__title h1 {
   font-size: 24px;
@@ -43,6 +47,13 @@ body {
   margin-right: 25px;
   font-size: 18px;
   font-weight: 500;
+}
+
+.fa-bars {
+  visibility: hidden;
+}
+#check-box {
+  display: none;
 }
 
 /* -------------------
@@ -295,6 +306,7 @@ footer .social-icon i {
   margin-right: 15px;
   margin-top: 20px;
 }
+
 /* -------------------
    footer end
 ----------------------- */
@@ -308,9 +320,58 @@ footer .social-icon i {
 /* desktop/ laptop */
 
 @media (max-width: 988px) {
-  .navigation-item {
-    display: none;
+  .fa-bars {
+    visibility: visible;
+    position: absolute;
+    right: 20px;
+    font-size: 35px;
+    margin-top: -22px;
   }
+
+  .navigation-item {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 530px;
+    width: 0;
+    position: absolute;
+    left: -110px;
+    background-color: #f7f7f7;
+  }
+  .navigation-item li {
+    margin-bottom: 35px;
+    padding-top: 15px;
+  }
+  #check-box:checked ~ .navigation-item {
+    width: 120vw;
+    transition: width ease-in 1s;
+    /* animation: width 1s ease-in; */
+    /* animation-play-state: paused; */
+    /* transition: width ease-in 1s; */
+  }
+  #check-box:not(:checked) ~ .navigation-item {
+    width: 0;
+    transition: width ease-in 1s;
+    /* animation: widthback 1s ease-in; */
+
+    /* animation-play-state: paused; */
+  }
+  @keyframes width {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 120vw;
+    }
+  }
+  @keyframes widthback {
+    0% {
+      width: 120vw;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
   .influencer__left h1 {
     font-size: 40px;
   }
@@ -322,6 +383,7 @@ footer .social-icon i {
 
 @media (max-width: 768px) {
   /* header section */
+ 
 
   .influencer__section__container {
     grid-template-columns: 1fr;
@@ -406,6 +468,16 @@ footer .social-icon i {
 }
 
 @media (max-width: 460px) {
+
+  .navigation__title h1 {
+    font-size: 18px;
+    
+  }
+  .fa-bars {
+   
+    right: 10px;
+   
+  }
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
   }
